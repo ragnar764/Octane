@@ -1,6 +1,6 @@
- import * as firebase from 'firebase/app';
- import 'firebase/storage';
- import 'firebase/firestore';
+ import firebase from 'firebase/compat/app';
+ import 'firebase/compat/storage';
+ import 'firebase/compat/firestore';
  // Import the functions you need from the SDKs you need
  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
