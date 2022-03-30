@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ProgressBar from "./ProgressBar";
 
 const UploadForm = () => {
     // eslint-disable-next-line
@@ -20,19 +20,19 @@ const changeHandler = (e) => {
         
 }
 
-    return(
-        <form>
+return (
+    <form>
+      <label>
         <input type="file" onChange={changeHandler} />
-
-        <div className="output">
-            {error && <div className="error">{ error }</div>}
-            {file && <div>{file.name}</div>}
-         
-        </div>
-        </form>
-
-    )
-
+        <span>+</span>
+      </label>
+      <div className="output">
+        { error && <div className="error">{ error }</div>}
+        { file && <div>{ file.name }</div> }
+        { file && <ProgressBar file={file} setFile={setFile} /> }
+      </div>
+    </form>
+  );
 }
 
 export default UploadForm;
