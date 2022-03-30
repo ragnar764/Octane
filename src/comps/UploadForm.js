@@ -22,6 +22,7 @@ const changeHandler = (e) => {
     return(
         <form>
         <input type="file" onChange={changeHandler} />
+        
         <div className="output">
             {error && <div className="error">{ error }</div>}
             {file && <div>{file.name}</div>}
