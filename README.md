@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Visit website app here: https://octane-b7861.web.app
+ 
+This project was bootstrapped with React JS
 
 ## Available Scripts
 
